@@ -1,0 +1,4 @@
+markovify==0.8.3 
+graphene>=2.0
+redis3==3.5.2.2
+
