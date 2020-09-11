@@ -7,7 +7,7 @@ import json
 app = FastAPI()
 
 def chainmake(): 
-    with open('/static/corpi_json/cat_namegen.json', 'r' , encoding='utf-8' ) as file: 
+    with open('/static/cat_namegen.json', 'r' , encoding='utf-8' ) as file: 
         data = file.read()
     chain = json.loads(data)
     pet = markovify.Text.from_json(chain)
