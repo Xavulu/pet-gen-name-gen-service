@@ -7,20 +7,15 @@ import json
 app = FastAPI()
 
 def chainmake(): 
-    with open('/static/dog_namegen.json', 'r' , encoding='utf-8' ) as file: 
+    with open('/static/cat_namegen.json', 'r' , encoding='utf-8' ) as file: 
         data = file.read()
     chain = json.loads(data)
     pet = markovify.Text.from_json(chain)
     return pet
 
 @app.get("/")
-def read_root():
+async def read_root():
     return {"Greeting": "welcome to pet-gen, care to create a pet?"}
-
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: str = None):
-    return {"item_id": item_id, "q": q}
 
 @app.get("/pet/{length}")
 async def read_pet(length: int):
