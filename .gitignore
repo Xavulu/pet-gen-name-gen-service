@@ -1,2 +1,5 @@
 .DS_Store
-Redis.env 
+.env
+cat_breeds.json 
+dog_breeds.json
+prod.Dockerfile
