@@ -23,7 +23,7 @@ def shuffle(arr: List[str], n: int) -> List[str]:
             arr[i], arr[j] = arr[j], arr[i]
         except IndexError as error: 
             logging.warning(f'could not shuffle: {error}')
-            return arr
+            return arr.reverse()
     return arr
 
 def getItem(arr: List[str], n: int) -> str: 
