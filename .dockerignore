@@ -2,6 +2,5 @@ pet-gen-large.png
 Makefile 
 README.md 
 .DS_Store 
-cat_breeds.json 
-dog_breeds.json
+test.py
 
