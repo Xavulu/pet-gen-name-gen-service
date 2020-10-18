@@ -1,6 +1,4 @@
 .DS_Store
-.env
 cat_breeds.json 
 dog_breeds.json
-prod.Dockerfile
 test.py
